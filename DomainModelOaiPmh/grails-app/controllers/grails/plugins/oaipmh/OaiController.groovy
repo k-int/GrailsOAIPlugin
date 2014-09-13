@@ -1,9 +1,7 @@
 package grails.plugins.oaipmh
 
 import grails.converters.*
-import grails.plugins.springsecurity.Secured
 import org.codehaus.groovy.grails.commons.GrailsClassUtils
-import org.gokb.cred.*
 import groovy.xml.MarkupBuilder
 import groovy.xml.StreamingMarkupBuilder
 
@@ -398,11 +396,5 @@ class OaiController {
 
     render(text: writer.toString(), contentType: "text/xml", encoding: "UTF-8")
   }
-
-}
-
-
-
-
 
 }
